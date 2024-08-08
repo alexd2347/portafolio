@@ -1,0 +1,113 @@
+.about-me {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    background-color: var(--negro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    color: var(--blanco);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skills-container:hover> :not(:hover) {
+    filter: saturate(50%);
+}
+
+.skill-card {
+    width: 200px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gris);
+    border-radius: 1rem;
+    border: 2px solid var(--gris);
+    transition: 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    filter: saturate(130%);
+}
+
+.skill-image {
+    width: 100%;
+    height: 50%;
+    border-radius: 1rem 1rem 0rem 0rem;
+    object-fit: cover;
+}
+
+.skill-name {
+    width: calc(100% - 2rem);
+    height: calc(45% - 1rem);
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.skill-bar {
+    width: 100%;
+    height: .8rem;
+    background-color: var(--negro);
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background: linear-gradient(to bottom right, var(--primario), var(--secundario));
+    border-radius: 0rem 0rem 0rem 1rem;
+    transition: .3s ease-in-out;
+}
+
+.skill-card:hover .skill-bar-fill {
+    animation: moveUpDown 1s ease-in-out infinite;
+}
+
+
+@media only screen and (max-width: 850px) {
+
+    .skills-container {
+        width: 90%;
+    }
+    .skill-card {
+        width: 30%;
+        height: 240px;
+    }
+    
+}
+
+@media only screen and (max-width: 430px) {
+    .about-me {
+
+        font-size: 24px;
+    }
+
+    .skills-container {
+        width: 100%;
+    }
+    .skill-card {
+        width: 42%;
+        height: 240px;
+    }
+    .skill-name {
+        width: calc(100% - 1rem);
+        height: calc(45% - 1.5rem);
+        padding: .5rem;
+        padding-top: 1rem;
+    }
+}
+

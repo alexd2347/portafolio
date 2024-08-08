@@ -1,0 +1,160 @@
+.contacto {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: var(--blanco);
+    font-weight: 600;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--gris);
+    border-radius: 1rem;
+    transition: .3s ease-in-out;
+}
+.contacto-title {
+    font-size: 36px;
+    color: var(--blanco);
+    font-weight: 400;
+    margin: 1rem 2rem;
+
+}
+
+.contacto p {
+    font-size: 16px;
+    color: var(--claro);
+    text-wrap: pretty;
+    margin: 1rem 2rem;
+    font-weight: 400;
+}
+
+.contacto-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-item {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 100;
+    color: var(--blanco);
+}
+
+.contacto-item .item {
+    color: var(--secundario);
+    font-weight: 400;
+    text-align: start;
+    margin: 0rem 1rem;
+}
+
+.contacto-item-btn {
+    background-color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: .5rem;
+    padding: 0rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.contacto-item-btn:hover {
+    filter: contrast(150%)
+}
+
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    z-index: 1000;
+}
+
+.popup {
+    font-size: 16px;
+    animation: fadeInOut 2s ease;
+}
+
+.contacto-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contacto-ico {
+    width: 1.5rem;
+    margin: .2rem .5rem .1rem .5rem;
+    height: auto;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 850px) {
+    .contacto {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .contacto {
+        width: 90%;
+        height: auto;
+        font-size: 26px;
+    }
+    .contacto-title {
+        font-size: 24px;
+    }
+
+    .contacto p {
+        font-size: 15px;
+        margin: 0rem;
+        margin-top: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .contacto-item {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+}
