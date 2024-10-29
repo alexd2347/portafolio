@@ -93,9 +93,10 @@
 .card-img {
     width: calc(100% - 1rem);
     height: auto;
+    max-height: 300px;
     margin: 0;
     transition: .3s ease-in-out;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: .5rem;
 }
 
@@ -190,6 +191,7 @@
         width: calc(50% - 1rem);
         height: auto;
         padding: .5rem;
+
     }
 
     .card-img-container {

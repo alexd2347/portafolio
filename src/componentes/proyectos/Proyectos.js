@@ -14,13 +14,101 @@ import SIIAM from '../../componentes/assets/siiam.png';
 import Mapa from '../../componentes/assets/mapa.png';
 import SyspolIMG from '../../componentes/assets/Syspol.png';
 import CasaPolicia from '../../componentes/assets/casa-policia.jpg';
-
+import Reportes from '../../componentes/assets/reportes.png';
+import Ventas from '../../componentes/assets/ventas.png';
 
 const Proyectos = () => {
 
     return (
         <div className="proyectos">
-            Mis proyectos
+            Proyectos
+            <article className="card">
+                <div className='card-text-container'>
+                    <h2 className="card-title">Web de Venta de Ropa</h2>
+                    <div className="experiencia-line" />
+                    <div className="card-desc">
+                        Creado para un socio que buscaba vender ropa en línea, este sistema permite gestionar inventarios y procesar pedidos con facilidad. Incluye filtros de productos, carrito de compras y una interfaz amigable. <span>Proyecto desarrollado completamente por mí.</span>
+                    </div>
+
+
+                    <div className="card-pill-container">
+                        <div className='card-pill'>
+                            <img
+                                src={AwsIMG}
+                                alt="AWS"
+                                className="card-pill-img"
+                            />
+                            AWS
+                        </div>
+                        <div className='card-pill'>
+                            <img
+                                src={ReactImg}
+                                alt="React"
+                                className="card-pill-img"
+                            />
+                            React
+                        </div>
+                        <div className='card-pill'>
+                            <img
+                                src={NodeImg}
+                                alt="Node js"
+                                className="card-pill-img"
+                            />
+                            Node js
+                        </div>
+                    </div>
+                </div>
+                <a
+                    href="https://importacionesjjstore.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="card-img-container"
+                >
+                    <img className="card-img" src={Ventas} alt="web ventas de ropa" />
+                    <div className="overlay">
+                        <span>Visitar web</span>
+                    </div>
+                </a>
+            </article >
+            <article className="card">
+                <div className='card-text-container'>
+                    <h2 className="card-title">Sistema de Reporte Ciudadano</h2>
+                    <div className="experiencia-line" />
+                    <div className="card-desc">
+                        Diseñado para la <span>Policía Municipal de Morelia, Michoacán</span>, este sistema permite a los ciudadanos reportar incidencias de forma rápida y eficiente. También facilita la comunicación entre los ciudadanos y las autoridades para una atención más oportuna. <span>Proyecto desarrollado completamente por mí.</span>
+                    </div>
+                    <div className="card-pill-container">
+                        <div className='card-pill'>
+                            <img
+                                src={AwsIMG}
+                                alt="AWS"
+                                className="card-pill-img"
+                            />
+                            AWS
+                        </div>
+                        <div className='card-pill'>
+                            <img
+                                src={ReactImg}
+                                alt="React"
+                                className="card-pill-img"
+                            />
+                            React
+                        </div>
+                        <div className='card-pill'>
+                            <img
+                                src={NodeImg}
+                                alt="Node js"
+                                className="card-pill-img"
+                            />
+                            Node js
+                        </div>
+                    </div>
+                </div>
+                <div className="card-img-container">
+                    <img className="card-img" src={Reportes} alt="reportes img" />
+                </div>
+            </article >
+
             <article className="card">
                 <div className='card-text-container'>
                     <h2 className="card-title">Sistema Integral de Información Ambiental de Michoacán</h2>
@@ -75,9 +163,6 @@ const Proyectos = () => {
                     </div>
                 </a>
             </article >
-
-
-
             <article className="card">
                 <div className='card-text-container'>
                     <h2 className="card-title">Atlas Digital de Información Ambiental</h2>
@@ -167,9 +252,6 @@ const Proyectos = () => {
                     <img className="card-img" src={SyspolIMG} alt="Mapa" />
                 </div>
             </article >
-
-
-
             <article className="card">
                 <div className='card-text-container'>
                     <h2 className="card-title">Sistema administrativo de casa policía</h2>
